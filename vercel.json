@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "hi_voyager/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "hi_voyager/wsgi.py"
+    }
+  ]
+}
