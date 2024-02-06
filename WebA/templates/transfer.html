@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轉帳</title>
+</head>
+<body>
+<h1>我是網站A，轉帳頁面</h1>
+
+<form method="post">
+<!--    <input type="hidden" name="csrftoken" value="{{ csrf_token }}">-->
+    <label>帳戶：</label><input type="text" name="to_account" placeholder="請輸入對方帳戶"><br/>
+    <label>金額：</label><input type="number" name="money" placeholder="請輸入轉帳金額"><br/>
+    <input type="submit" value="轉帳">
+</form>
+
+</body>
+</html>
